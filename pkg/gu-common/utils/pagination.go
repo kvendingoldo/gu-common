@@ -2,7 +2,7 @@ package utils
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/kvendingoldo/gu-common/pkg/model"
+	"github.com/kvendingoldo/gu-common/pkg/gu-common/model"
 	"strconv"
 )
 
