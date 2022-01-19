@@ -2,12 +2,12 @@ package utils
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/kvendingoldo/gu-common/pkg/model"
+	"github.com/kvendingoldo/gu-common/pkg/models"
 	"strconv"
 )
 
 //GeneratePaginationFromRequest ...
-func GeneratePaginationFromRequest(c *gin.Context) model.Pagination {
+func GeneratePaginationFromRequest(c *gin.Context) models.Pagination {
 	limit := 2
 	page := 1
 	sort := "created_at asc"
@@ -27,7 +27,7 @@ func GeneratePaginationFromRequest(c *gin.Context) model.Pagination {
 			break
 		}
 	}
-	return model.Pagination{
+	return models.Pagination{
 		Limit: limit,
 		Page:  page,
 		Sort:  sort,

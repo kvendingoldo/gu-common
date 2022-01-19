@@ -1,4 +1,4 @@
-package model
+package models
 
 type Pagination struct {
 	Limit int    `json:"limit"`
